@@ -1,0 +1,17 @@
+site_name: 笔记本
+site_url: https://longjie233.top/
+site_author: 龙介LongJie
+site_description: >-
+  好奇吗？这桌子上有一本笔记放在上面。
+
+theme:
+  name: material
+  favicon: ./favicon.ico
+  icon:
+    logo: material/book-off
+
+markdown_extensions:
+  - pymdownx.arithmatex
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
