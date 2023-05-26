@@ -1,0 +1,21 @@
+DirectoryIndex disabled
+
+Options +Indexes
+Options +Includes
+
+IndexOptions Charset=UTF-8
+IndexOptions FancyIndexing
+IndexOptions SuppressHTMLPreamble
+IndexOptions HTMLTable
+IndexOptions VersionSort
+IndexOptions SuppressDescription
+IndexOptions SuppressIcon
+IndexOptions SuppressLastModified
+IndexOptions SuppressRules
+IndexOptions FoldersFirst
+IndexOptions IgnoreCase
+IndexOptions NameWidth=*
+
+IndexStyleSheet "/.indexstyles/css.css"
+
+IndexOrderDefault Ascending Name
