@@ -1,0 +1,41 @@
+### 获取电信光猫超级密码
+POST https://nos10-1.189cube.com/device/api
+     ?token=
+     &MAC=
+Host: nos10-1.189cube.com
+Content-Type: application/json
+User-Agent: ESmartHome/5.0.1 (iPhone; iOS 16.6.1; Scale/3.00)
+
+{
+    "ServiceName": "com.ctc.igd1",
+    "ObjectPath": "/com/ctc/igd1/Telecom/System",
+    "InterfaceName": "com.ctc.igd1.SysCmd",
+    "MethodName": "GetTAPasswd",
+    "Params": [],
+    "RPCMethod": "CallMethod"
+}
+
+
+### 光猫LED
+POST https://nos10-1.189cube.com/device/api
+     ?token=
+     &MAC=
+Host: nos10-1.189cube.com
+Content-Type: application/json
+User-Agent: ESmartHome/5.0.1 (iPhone; iOS 16.6.1; Scale/3.00)
+
+{
+    "ServiceName": "com.ctc.igd1",
+    "Params": [
+        {
+            "InterfaceName": "com.ctc.igd1.LED",
+            "Properties": [
+                {
+                    "Status":"OFF"
+                }
+            ],
+            "ObjectPath": "/com/ctc/igd1/Config/Peripheral/LED"
+        }
+    ],
+    "RPCMethod": "SetPropertyValues"
+}
